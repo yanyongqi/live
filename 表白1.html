@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            background: url('images/0.jpg') no-repeat;
+            background-size: 100% 100%;
+            overflow: hidden;
+        }
+        #heart{
+            position: relative;
+            width: 600px;
+            height: 520px;
+            margin: auto;
+
+        }
+        /*#heart:before{*/
+            /*content: '';*/
+            /*display: block;*/
+            /*border-radius: 10px 10px 0 0;*/
+            /*width: 10px;*/
+            /*height: 16px;*/
+            /*background-color: red;*/
+            /*transform: rotate(45deg);*/
+        /*}*/
+        /*#heart:after{*/
+            /*position: absolute;*/
+            /*top: 0;*/
+            /*left: -4px;*/
+            /*content: '';*/
+            /*border-radius: 10px 10px 0 0;*/
+            /*width: 10px;*/
+            /*height: 16px;*/
+            /*background-color: red;*/
+            /*transform: rotate(-45deg);*/
+        /*}*/
+        p {
+            position: absolute;
+            top:150px;
+            left: 0;
+            width: 100%;
+            color: red;
+        }
+        span{
+            display: inline-block;
+            border: 1px solid yellow;
+            border-radius: 5px;
+            margin-right: 95px;
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 16px;
+        }
+        span.right{
+            height: 80px;
+        }
+
+        .snowfall-flakes{
+            width: 10px !important;
+            height: 10px !important;
+        }
+        .snowfall-flakes:before{
+            content: '';
+            display: block;
+            border-radius: 10px 10px 0 0;
+            width: 10px;
+            height: 16px;
+            background-color: red;
+            transform: rotate(45deg);
+        }
+        .snowfall-flakes:after{
+            position: absolute;
+            top: 0;
+            left: -4px;
+            content: '';
+            border-radius: 10px 10px 0 0;
+            width: 10px;
+            height: 16px;
+            background-color: red;
+            transform: rotate(-45deg);
+        }
+
+    </style>
+</head>
+<body>
+<div id="heart" >
+    <p >
+        <span>女神莹</span>
+        <span class="right">你只需要走一步！其他的等我走过来就好。</span>
+    </p>
+
+</div>
+<audio src="谭嘉仪-小幸运.mp3" autoplay></audio>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="snowfall.jquery.js"></script>
+<script>
+    $(function () {
+        $(document).snowfall({
+            flakeCount:50
+        })
+    })
+</script>
+</body>
+</html>
